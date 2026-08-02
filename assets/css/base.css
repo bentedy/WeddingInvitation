@@ -1,0 +1,394 @@
+/* base.css */
+/* ======================================================
+   Zaahid & Alya Wedding Invitation
+   Base Styles
+====================================================== */
+
+/* ===========================
+   CSS RESET
+=========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   HTML
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    font-family:var(--font-body);
+
+    background:var(--color-background);
+
+    color:var(--color-text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+
+    background:var(--color-primary);
+
+    color:white;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition-fast);
+
+}
+
+a:hover{
+
+    color:var(--color-primary);
+
+}
+
+/* ===========================
+   IMAGES
+=========================== */
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+}
+
+/* ===========================
+   LIST
+=========================== */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-heading);
+
+    font-weight:600;
+
+    line-height:1.2;
+
+    color:var(--color-text);
+
+}
+
+/* ===========================
+   PARAGRAPH
+=========================== */
+
+p{
+
+    color:var(--color-text-light);
+
+}
+
+/* ===========================
+   ARABIC
+=========================== */
+
+.cover__arabic{
+
+    font-family:var(--font-arabic);
+
+    font-size:2rem;
+
+    color:var(--color-primary);
+
+}
+
+/* ===========================
+   SCRIPT FONT
+=========================== */
+
+.hero__names,
+.cover__title{
+
+    font-family:var(--font-script);
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    position:relative;
+
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+
+    position:relative;
+
+    padding:120px 24px;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:min(100%, var(--container-width));
+
+    margin-inline:auto;
+
+}
+
+/* ===========================
+   BUTTON COMPONENT
+=========================== */
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:16px 42px;
+
+    border-radius:999px;
+
+    transition:var(--transition-normal);
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================
+   PRIMARY BUTTON
+=========================== */
+
+.button--primary{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.button--primary:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--color-primary-dark);
+
+    box-shadow:var(--shadow-gold);
+
+}
+
+/* ===========================
+   ICON BUTTON
+=========================== */
+
+#musicButton{
+
+    position:fixed;
+
+    right:24px;
+
+    bottom:24px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:var(--color-primary);
+
+    box-shadow:var(--shadow-md);
+
+    z-index:999;
+
+    transition:var(--transition-normal);
+
+}
+
+#musicButton:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   LOADER
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:var(--color-background);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+}
+
+.loader__content{
+
+    text-align:center;
+
+}
+
+.loader__logo{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    border:2px solid var(--color-primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:var(--font-script);
+
+    font-size:2rem;
+
+    color:var(--color-primary);
+
+    margin-inline:auto;
+
+    margin-bottom:24px;
+
+}
+
+.loader__text{
+
+    letter-spacing:.2em;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+
+}
+
+/* ===========================
+   HIDDEN
+=========================== */
+
+.hidden{
+
+    display:none !important;
+
+}

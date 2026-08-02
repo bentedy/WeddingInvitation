@@ -1,0 +1,151 @@
+/* variables.css */
+/* ==========================================
+   Zaahid & Alya Wedding Invitation
+   Design System
+========================================== */
+
+:root{
+
+    /* ======================================
+       COLORS
+    ====================================== */
+
+    --color-background: #FAF7F2;
+    --color-surface: #FFFDF9;
+    --color-surface-alt: #F5EFE6;
+
+    --color-primary: #D4AF37;
+    --color-primary-light: #E8C96A;
+    --color-primary-dark: #B8901D;
+
+    --color-text: #3D352E;
+    --color-text-light: #766C62;
+
+    --color-border: #E6D7BF;
+
+    --color-accent: #CFA8A0;
+
+    --color-success: #86B88A;
+    --color-error: #C55D5D;
+
+    /* ======================================
+       SHADOWS
+    ====================================== */
+
+    --shadow-sm:
+        0 4px 12px rgba(0,0,0,.05);
+
+    --shadow-md:
+        0 10px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:
+        0 25px 60px rgba(0,0,0,.10);
+
+    --shadow-gold:
+        0 0 25px rgba(212,175,55,.25);
+
+    /* ======================================
+       GLASS EFFECT
+    ====================================== */
+
+    --glass-bg:
+        rgba(255,255,255,.55);
+
+    --glass-border:
+        rgba(255,255,255,.35);
+
+    --glass-blur:
+        blur(18px);
+
+    /* ======================================
+       BORDER RADIUS
+    ====================================== */
+
+    --radius-xs:6px;
+    --radius-sm:12px;
+    --radius-md:20px;
+    --radius-lg:32px;
+    --radius-xl:48px;
+    --radius-round:999px;
+
+    /* ======================================
+       SPACING
+    ====================================== */
+
+    --space-1:4px;
+    --space-2:8px;
+    --space-3:12px;
+    --space-4:16px;
+    --space-5:24px;
+    --space-6:32px;
+    --space-7:48px;
+    --space-8:64px;
+    --space-9:96px;
+    --space-10:128px;
+
+    /* ======================================
+       FONT SIZE
+    ====================================== */
+
+    --text-xs:.75rem;
+    --text-sm:.875rem;
+    --text-md:1rem;
+    --text-lg:1.125rem;
+    --text-xl:1.35rem;
+    --text-2xl:2rem;
+    --text-3xl:3rem;
+    --text-4xl:4rem;
+    --text-5xl:5rem;
+
+    /* ======================================
+       FONT FAMILY
+    ====================================== */
+
+    --font-body:
+        "Poppins",
+        sans-serif;
+
+    --font-heading:
+        "Cormorant Garamond",
+        serif;
+
+    --font-script:
+        "Great Vibes",
+        cursive;
+
+    --font-arabic:
+        "Noto Naskh Arabic",
+        serif;
+
+    /* ======================================
+       FONT WEIGHT
+    ====================================== */
+
+    --fw-light:300;
+    --fw-normal:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+
+    /* ======================================
+       TRANSITIONS
+    ====================================== */
+
+    --transition-fast:
+        .25s ease;
+
+    --transition-normal:
+        .45s ease;
+
+    --transition-slow:
+        .8s ease;
+
+    /* ======================================
+       LAYOUT
+    ====================================== */
+
+    --container-width:1200px;
+
+    --header-height:80px;
+
+}

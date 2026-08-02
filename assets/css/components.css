@@ -1,0 +1,397 @@
+/* components.css */
+/* ======================================================
+   Zaahid & Alya Wedding Invitation
+   Components
+====================================================== */
+
+/* ==========================================
+   Decorative Corners
+========================================== */
+
+.cover__content::before,
+.cover__content::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+    height:80px;
+
+    border-color:var(--color-primary);
+    border-style:solid;
+
+    opacity:.5;
+
+}
+
+.cover__content::before{
+
+    top:18px;
+    left:18px;
+
+    border-width:2px 0 0 2px;
+
+    border-radius:20px 0 0 0;
+
+}
+
+.cover__content::after{
+
+    bottom:18px;
+    right:18px;
+
+    border-width:0 2px 2px 0;
+
+    border-radius:0 0 20px 0;
+
+}
+
+/* ==========================================
+   Primary Button
+========================================== */
+
+.button--primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-width:220px;
+
+    height:58px;
+
+    font-size:.95rem;
+
+    letter-spacing:.15em;
+
+}
+
+/* ==========================================
+   Gold Shine
+========================================== */
+
+.button--primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:
+
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.7),
+            transparent
+        );
+
+    transition:.8s;
+
+}
+
+.button--primary:hover::before{
+
+    left:130%;
+
+}
+
+/* ==========================================
+   Loader Logo
+========================================== */
+
+.loader__logo{
+
+    position:relative;
+
+}
+
+.loader__logo::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(212,175,55,.35);
+
+}
+
+/* ==========================================
+   Countdown Card
+========================================== */
+
+.countdown__card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.countdown__card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--color-primary),
+            transparent
+        );
+
+}
+
+/* ==========================================
+   Card Glow
+========================================== */
+
+.countdown__card:hover{
+
+    border-color:var(--color-primary);
+
+}
+
+/* ==========================================
+   Divider
+========================================== */
+
+.section-divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    margin:24px auto;
+
+    opacity:.5;
+
+}
+
+/* ==========================================
+   Hero Decoration
+========================================== */
+
+.hero__eyebrow{
+
+    position:relative;
+
+}
+
+.hero__eyebrow::before,
+.hero__eyebrow::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    width:70px;
+
+    height:1px;
+
+    background:var(--color-primary);
+
+}
+
+.hero__eyebrow::before{
+
+    right:105%;
+
+}
+
+.hero__eyebrow::after{
+
+    left:105%;
+
+}
+
+/* ==========================================
+   Music Button
+========================================== */
+
+#musicButton{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.2rem;
+
+}
+
+#musicButton:hover{
+
+    color:white;
+
+    background:var(--color-primary);
+
+}
+
+/* ==========================================
+   Elegant Section Title
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:48px;
+
+}
+
+.section-title h2{
+
+    font-size:3rem;
+
+    margin-bottom:12px;
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   Glass Card Utility
+========================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.6);
+
+    box-shadow:var(--shadow-md);
+
+    border-radius:24px;
+
+}
+
+/* ==========================================
+   Soft Gold Border
+========================================== */
+
+.gold-border{
+
+    border:1px solid rgba(212,175,55,.45);
+
+}
+
+/* ==========================================
+   Decorative Dot
+========================================== */
+
+.dot{
+
+    display:inline-block;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    margin:0 10px;
+
+}
+
+/* ==========================================
+   Scroll Indicator
+========================================== */
+
+.scroll-indicator{
+
+    width:28px;
+
+    height:46px;
+
+    border:2px solid var(--color-primary);
+
+    border-radius:30px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+.scroll-indicator::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:8px;
+
+    transform:translateX(-50%);
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    animation:scrollMove 2s infinite;
+
+}
+
+/* ==========================================
+   Utility Classes
+========================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{margin-top:8px;}
+.mt-2{margin-top:16px;}
+.mt-3{margin-top:24px;}
+.mt-4{margin-top:32px;}
+.mt-5{margin-top:48px;}
+
+.mb-1{margin-bottom:8px;}
+.mb-2{margin-bottom:16px;}
+.mb-3{margin-bottom:24px;}
+.mb-4{margin-bottom:32px;}
+.mb-5{margin-bottom:48px;}
