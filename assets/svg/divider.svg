@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="40" viewBox="0 0 400 40">
+<line x1="20" y1="20" x2="165" y2="20" stroke="#D4AF37" stroke-width="1"/>
+<g transform="translate(200 20)">
+<circle r="4" fill="#D4AF37"/>
+<path d="M0 -10 C4 -4 10 -2 0 8 C-10 -2 -4 -4 0 -10" fill="none" stroke="#D4AF37" stroke-width="1"/>
+</g>
+<line x1="235" y1="20" x2="380" y2="20" stroke="#D4AF37" stroke-width="1"/>
+</svg>
