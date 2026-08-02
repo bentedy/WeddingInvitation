@@ -1,280 +1,62 @@
-/* components.css */
-/* ======================================================
-   Zaahid & Alya Wedding Invitation
+/* ==========================================
    Components
-====================================================== */
-
-/* ==========================================
-   Decorative Corners
+   Wedding Invitation 2026
 ========================================== */
 
-.cover__content::before,
-.cover__content::after{
+/* -----------------------------
+   Loader
+------------------------------*/
 
-    content:"";
+#loader{
 
-    position:absolute;
-
-    width:80px;
-    height:80px;
-
-    border-color:var(--color-primary);
-    border-style:solid;
-
-    opacity:.5;
+    transition:.8s ease;
 
 }
 
-.cover__content::before{
+#loader.hide{
 
-    top:18px;
-    left:18px;
+    opacity:0;
 
-    border-width:2px 0 0 2px;
+    visibility:hidden;
 
-    border-radius:20px 0 0 0;
-
-}
-
-.cover__content::after{
-
-    bottom:18px;
-    right:18px;
-
-    border-width:0 2px 2px 0;
-
-    border-radius:0 0 20px 0;
+    pointer-events:none;
 
 }
 
-/* ==========================================
-   Primary Button
-========================================== */
+/* -----------------------------
+   Glass Card
+------------------------------*/
 
-.button--primary{
+.cover-container{
 
-    position:relative;
-
-    overflow:hidden;
-
-    min-width:220px;
-
-    height:58px;
-
-    font-size:.95rem;
-
-    letter-spacing:.15em;
+    transition:.5s ease;
 
 }
 
-/* ==========================================
-   Gold Shine
-========================================== */
+.cover-container:hover{
 
-.button--primary::before{
+    transform:translateY(-6px);
 
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:-120%;
-
-    width:100%;
-    height:100%;
-
-    background:
-
-        linear-gradient(
-            120deg,
-            transparent,
-            rgba(255,255,255,.7),
-            transparent
-        );
-
-    transition:.8s;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.12);
 
 }
 
-.button--primary:hover::before{
+/* -----------------------------
+   Hero
+------------------------------*/
 
-    left:130%;
+.hero-content{
 
-}
-
-/* ==========================================
-   Loader Logo
-========================================== */
-
-.loader__logo{
-
-    position:relative;
+    animation:fadeUp 1.2s ease;
 
 }
 
-.loader__logo::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:-8px;
-
-    border-radius:50%;
-
-    border:1px solid rgba(212,175,55,.35);
-
-}
-
-/* ==========================================
-   Countdown Card
-========================================== */
-
-.countdown__card{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-.countdown__card::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    height:4px;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--color-primary),
-            transparent
-        );
-
-}
-
-/* ==========================================
-   Card Glow
-========================================== */
-
-.countdown__card:hover{
-
-    border-color:var(--color-primary);
-
-}
-
-/* ==========================================
-   Divider
-========================================== */
-
-.section-divider{
-
-    width:120px;
-
-    height:2px;
-
-    background:var(--color-primary);
-
-    margin:24px auto;
-
-    opacity:.5;
-
-}
-
-/* ==========================================
-   Hero Decoration
-========================================== */
-
-.hero__eyebrow{
-
-    position:relative;
-
-}
-
-.hero__eyebrow::before,
-.hero__eyebrow::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:50%;
-
-    width:70px;
-
-    height:1px;
-
-    background:var(--color-primary);
-
-}
-
-.hero__eyebrow::before{
-
-    right:105%;
-
-}
-
-.hero__eyebrow::after{
-
-    left:105%;
-
-}
-
-/* ==========================================
-   Music Button
-========================================== */
-
-#musicButton{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:1.2rem;
-
-}
-
-#musicButton:hover{
-
-    color:white;
-
-    background:var(--color-primary);
-
-}
-
-/* ==========================================
-   Elegant Section Title
-========================================== */
-
-.section-title{
-
-    text-align:center;
-
-    margin-bottom:48px;
-
-}
-
-.section-title h2{
-
-    font-size:3rem;
-
-    margin-bottom:12px;
-
-}
-
-.section-title p{
+/* -----------------------------
+   Quote
+------------------------------*/
+
+.quote{
 
     max-width:650px;
 
@@ -282,116 +64,230 @@
 
 }
 
-/* ==========================================
-   Glass Card Utility
-========================================== */
+.quote p{
 
-.glass{
+    letter-spacing:.5px;
 
-    background:rgba(255,255,255,.55);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.6);
-
-    box-shadow:var(--shadow-md);
-
-    border-radius:24px;
+    line-height:1.9;
 
 }
 
-/* ==========================================
-   Soft Gold Border
-========================================== */
+/* -----------------------------
+   Guest Name
+------------------------------*/
 
-.gold-border{
-
-    border:1px solid rgba(212,175,55,.45);
-
-}
-
-/* ==========================================
-   Decorative Dot
-========================================== */
-
-.dot{
+#guestName{
 
     display:inline-block;
 
-    width:8px;
+    padding:12px 28px;
 
-    height:8px;
+    margin:20px 0;
 
-    border-radius:50%;
+    border-radius:999px;
 
-    background:var(--color-primary);
+    background:#fff;
 
-    margin:0 10px;
+    border:1px solid var(--border);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
 
 }
 
-/* ==========================================
-   Scroll Indicator
-========================================== */
+/* -----------------------------
+   Divider
+------------------------------*/
 
-.scroll-indicator{
+.divider{
 
-    width:28px;
+    opacity:.8;
 
-    height:46px;
+    transition:.3s ease;
 
-    border:2px solid var(--color-primary);
+}
 
-    border-radius:30px;
+.divider:hover{
 
-    margin:auto;
+    transform:scale(1.05);
+
+}
+
+/* -----------------------------
+   Countdown
+------------------------------*/
+
+.time-box{
+
+    min-width:95px;
+
+}
+
+.time-box h2{
+
+    transition:.3s;
+
+}
+
+.time-box:hover h2{
+
+    transform:translateY(-5px);
+
+    color:var(--gold);
+
+}
+
+/* -----------------------------
+   Open Button
+------------------------------*/
+
+#openInvitation{
 
     position:relative;
 
+    overflow:hidden;
+
 }
 
-.scroll-indicator::before{
+#openInvitation::before{
 
     content:"";
 
     position:absolute;
 
-    left:50%;
+    top:0;
 
-    top:8px;
+    left:-120%;
 
-    transform:translateX(-50%);
+    width:120%;
 
-    width:6px;
+    height:100%;
 
-    height:6px;
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.45),
+
+            transparent
+
+        );
+
+}
+
+#openInvitation:hover::before{
+
+    left:130%;
+
+    transition:.9s;
+
+}
+
+#openInvitation:hover{
+
+    box-shadow:
+
+        0 20px 45px rgba(212,175,55,.35);
+
+}
+
+/* -----------------------------
+   Music Button
+------------------------------*/
+
+#musicToggle{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:58px;
+
+    height:58px;
 
     border-radius:50%;
 
-    background:var(--color-primary);
+    background:var(--gold);
 
-    animation:scrollMove 2s infinite;
+    color:#fff;
+
+    font-size:22px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    z-index:100;
+
+}
+
+#musicToggle:hover{
+
+    transform:rotate(15deg) scale(1.08);
+
+}
+
+/* -----------------------------
+   Scroll Indicator
+------------------------------*/
+
+.scroll-indicator{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.scroll-indicator:hover{
+
+    transform:translateY(8px);
+
+}
+
+/* -----------------------------
+   Future Sections
+------------------------------*/
+
+#couple,
+#event,
+#gallery,
+#rsvp,
+#location{
+
+    min-height:100vh;
+
+}
+
+/* -----------------------------
+   Floating Glow
+------------------------------*/
+
+.cover-container::after{
+
+    filter:drop-shadow(0 0 12px rgba(212,175,55,.4));
 
 }
 
 /* ==========================================
-   Utility Classes
+   Music Button
 ========================================== */
 
-.text-center{
+#musicToggle{
 
-    text-align:center;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
 }
 
-.mt-1{margin-top:8px;}
-.mt-2{margin-top:16px;}
-.mt-3{margin-top:24px;}
-.mt-4{margin-top:32px;}
-.mt-5{margin-top:48px;}
+#musicToggle.playing{
 
-.mb-1{margin-bottom:8px;}
-.mb-2{margin-bottom:16px;}
-.mb-3{margin-bottom:24px;}
-.mb-4{margin-bottom:32px;}
-.mb-5{margin-bottom:48px;}
+    animation:spin 6s linear infinite;
+
+}

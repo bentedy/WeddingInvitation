@@ -1,370 +1,451 @@
-/* animations.css */
-/* ======================================================
-   Zaahid & Alya Wedding Invitation
-   Animations
-====================================================== */
-
 /* ==========================================
-   Fade In
+   Wedding Invitation 2026
+   Premium Animations
 ========================================== */
 
-@keyframes fadeIn {
+/* ---------------- Fade Up ---------------- */
 
-    from {
-        opacity: 0;
-    }
+@keyframes fadeUp{
 
-    to {
-        opacity: 1;
-    }
+    from{
 
-}
-
-/* ==========================================
-   Fade Up
-========================================== */
-
-@keyframes fadeUp {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(40px);
+        opacity:0;
+        transform:translateY(50px);
 
     }
 
-    to {
+    to{
 
-        opacity: 1;
-
-        transform: translateY(0);
+        opacity:1;
+        transform:translateY(0);
 
     }
 
 }
 
-/* ==========================================
-   Fade Down
-========================================== */
+/* ---------------- Fade Down ---------------- */
 
-@keyframes fadeDown {
+@keyframes fadeDown{
 
-    from {
+    from{
 
-        opacity: 0;
-
-        transform: translateY(-30px);
+        opacity:0;
+        transform:translateY(-40px);
 
     }
 
-    to {
+    to{
 
-        opacity: 1;
-
-        transform: translateY(0);
+        opacity:1;
+        transform:translateY(0);
 
     }
 
 }
 
-/* ==========================================
-   Zoom In
-========================================== */
+/* ---------------- Fade In ---------------- */
 
-@keyframes zoomIn {
+@keyframes fade{
 
-    from {
+    from{
 
-        opacity: 0;
-
-        transform: scale(.85);
+        opacity:0;
 
     }
 
-    to {
+    to{
 
-        opacity: 1;
-
-        transform: scale(1);
+        opacity:1;
 
     }
 
 }
 
-/* ==========================================
-   Floating
-========================================== */
+/* ---------------- Scale ---------------- */
 
-@keyframes floating {
+@keyframes scaleIn{
 
-    0% {
+    from{
 
-        transform: translateY(0);
+        opacity:0;
 
-    }
-
-    50% {
-
-        transform: translateY(-10px);
+        transform:scale(.92);
 
     }
 
-    100% {
+    to{
 
-        transform: translateY(0);
+        opacity:1;
+
+        transform:scale(1);
 
     }
 
 }
 
-/* ==========================================
-   Gold Glow
-========================================== */
+/* ---------------- Float ---------------- */
 
-@keyframes glow {
+@keyframes float{
 
-    0% {
+    0%{
 
-        box-shadow: 0 0 0 rgba(212,175,55,.2);
+        transform:translateY(0);
 
     }
 
-    50% {
+    50%{
 
-        box-shadow:
-            0 0 25px rgba(212,175,55,.45);
+        transform:translateY(-12px);
 
     }
 
-    100% {
+    100%{
 
-        box-shadow: 0 0 0 rgba(212,175,55,.2);
+        transform:translateY(0);
 
     }
 
 }
 
-/* ==========================================
-   Pulse
-========================================== */
+/* ---------------- Pulse ---------------- */
 
-@keyframes pulse {
+@keyframes pulse{
 
-    0% {
+    0%{
 
-        transform: scale(1);
+        box-shadow:0 0 0 rgba(212,175,55,.0);
 
     }
 
-    50% {
+    50%{
 
-        transform: scale(1.04);
-
-    }
-
-    100% {
-
-        transform: scale(1);
+        box-shadow:0 0 35px rgba(212,175,55,.30);
 
     }
 
-}
+    100%{
 
-/* ==========================================
-   Loader Rotation
-========================================== */
-
-@keyframes rotateBorder {
-
-    from {
-
-        transform: rotate(0deg);
-
-    }
-
-    to {
-
-        transform: rotate(360deg);
+        box-shadow:0 0 0 rgba(212,175,55,.0);
 
     }
 
 }
 
-/* ==========================================
-   Scroll Indicator
-========================================== */
+/* ---------------- Shine ---------------- */
 
-@keyframes scrollMove {
+@keyframes shine{
 
-    0% {
+    from{
 
-        opacity: 0;
-
-        transform: translate(-50%,0);
+        background-position:-200%;
 
     }
 
-    50% {
+    to{
 
-        opacity: 1;
-
-        transform: translate(-50%,12px);
-
-    }
-
-    100% {
-
-        opacity: 0;
-
-        transform: translate(-50%,24px);
+        background-position:200%;
 
     }
 
 }
 
-/* ==========================================
-   Shimmer
-========================================== */
+/* ---------------- Loader ---------------- */
 
-@keyframes shimmer {
-
-    from {
-
-        background-position: -300px 0;
-
-    }
-
-    to {
-
-        background-position: 300px 0;
-
-    }
-
-}
-
-/* ==========================================
-   Hero Entrance
-========================================== */
-
-.hero__eyebrow {
-
-    animation:
-        fadeDown .8s ease both;
-
-}
-
-.hero__names {
-
-    animation:
-        fadeUp 1s .2s both;
-
-}
-
-.hero__description {
-
-    animation:
-        fadeUp 1s .45s both;
-
-}
-
-/* ==========================================
-   Cover
-========================================== */
-
-.cover__content {
-
-    animation:
-        zoomIn .9s ease;
-
-}
-
-/* ==========================================
-   Loader
-========================================== */
-
-.loader__logo {
+.loader-content{
 
     animation:
 
-        floating 3s ease-in-out infinite,
+        fade 1.2s ease,
 
-        glow 3s ease infinite;
+        scaleIn 1.3s ease;
 
 }
 
-.loader__logo::after {
+/* ---------------- Cover ---------------- */
+
+.cover-container{
 
     animation:
-        rotateBorder 12s linear infinite;
+
+        fadeUp 1.4s ease;
 
 }
 
-/* ==========================================
-   Button
-========================================== */
+/* ---------------- Hero ---------------- */
 
-.button--primary {
+.hero-content>*{
 
-    animation:
-        pulse 3s infinite;
+    opacity:0;
 
-}
-
-/* ==========================================
-   Countdown Cards
-========================================== */
-
-.countdown__card {
-
-    animation:
-        fadeUp 1s ease both;
+    animation:fadeUp .8s forwards;
 
 }
 
-.countdown__card:nth-child(1){
+.hero-content>*:nth-child(1){
 
     animation-delay:.2s;
 
 }
 
-.countdown__card:nth-child(2){
+.hero-content>*:nth-child(2){
 
     animation-delay:.35s;
 
 }
 
-.countdown__card:nth-child(3){
+.hero-content>*:nth-child(3){
 
     animation-delay:.5s;
 
 }
 
-.countdown__card:nth-child(4){
+.hero-content>*:nth-child(4){
 
     animation-delay:.65s;
 
 }
 
-/* ==========================================
-   Hover Effects
-========================================== */
+.hero-content>*:nth-child(5){
 
-.countdown__card:hover{
+    animation-delay:.8s;
+
+}
+
+.hero-content>*:nth-child(6){
+
+    animation-delay:1s;
+
+}
+
+.hero-content>*:nth-child(7){
+
+    animation-delay:1.2s;
+
+}
+
+/* ---------------- Divider ---------------- */
+
+.divider{
 
     animation:
-        floating 1.8s ease-in-out infinite;
+
+        fade 2s ease,
+
+        float 5s infinite;
+
+}
+
+/* ---------------- Button ---------------- */
+
+#openInvitation{
+
+    animation:
+
+        pulse 3s infinite;
+
+}
+
+/* ---------------- Music ---------------- */
+
+#musicToggle{
+
+    animation:
+
+        float 4s infinite;
+
+}
+
+/* ---------------- Countdown ---------------- */
+
+.time-box{
+
+    animation:
+
+        fadeUp 1s ease;
+
+}
+
+.time-box:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.time-box:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+.time-box:nth-child(5){
+
+    animation-delay:.6s;
+
+}
+
+.time-box:nth-child(7){
+
+    animation-delay:.8s;
+
+}
+
+/* ---------------- Scroll ---------------- */
+
+.scroll-indicator{
+
+    animation:
+
+        float 2.5s infinite;
 
 }
 
 /* ==========================================
-   Music Button
+   Music Rotation
 ========================================== */
 
-#musicButton:hover{
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+   Countdown Animation
+========================================== */
+
+@keyframes flip{
+
+    0%{
+
+        opacity:.3;
+
+        transform:translateY(10px);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.flip{
+
+    animation:flip .4s ease;
+
+}
+
+/* ==========================================
+   Scroll Reveal
+========================================== */
+
+.hidden-section{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   Couple Animation
+========================================== */
+
+.couple-name{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.heart{
 
     animation:
 
-        pulse 1s infinite;
+        pulse 3s infinite,
+
+        float 4s infinite;
+
+}
+
+
+/* ==========================================
+   Spinner
+========================================== */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
 
 }
